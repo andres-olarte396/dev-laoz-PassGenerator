@@ -1,40 +1,57 @@
-# Codificación y Decodificación URI
+# Generador de Contraseñas Seguras
 
-Esta herramienta permite codificar y decodificar URLs o cualquier texto que contenga caracteres especiales, utilizando las funciones integradas de JavaScript `encodeURIComponent` y `decodeURIComponent`.
+Este proyecto es una herramienta que genera contraseñas seguras y aleatorias, con opciones personalizables para la longitud de la contraseña, inclusión de caracteres especiales, números y letras mayúsculas.
 
-## Funcionalidades
+## Características
 
-- **Codificar**: Transforma los caracteres especiales (como espacios, `&`, `/`, etc.) en una cadena de texto en su representación codificada para ser utilizada en URLs.
-- **Decodificar**: Convierte una cadena de texto codificada de vuelta a su formato original legible.
+- Permite establecer la longitud de la contraseña (1 a 128 caracteres).
+- Opción para incluir letras mayúsculas.
+- Opción para incluir números.
+- Opción para incluir caracteres especiales.
+- Copia la contraseña generada al portapapeles con un solo clic.
 
-## Cómo usar
+## Uso
 
-1. Escribe o pega una URL o texto en el área de texto provista.
-2. Haz clic en el botón `Codificar` para obtener la cadena codificada.
-3. Haz clic en el botón `Decodificar` para obtener la cadena decodificada.
+1. Establece la longitud deseada para la contraseña en el campo correspondiente.
+2. Selecciona las opciones para incluir letras mayúsculas, números y/o caracteres especiales.
+3. Presiona el botón "Generar Contraseña".
+4. La contraseña generada aparecerá en la sección correspondiente.
+5. Utiliza el botón "Copiar Contraseña" para copiar la contraseña al portapapeles.
 
-## Requisitos
+## Requisitos del Proyecto
 
-Este proyecto solo necesita un navegador web para funcionar. No requiere instalaciones adicionales.
+Este proyecto es una aplicación web simple basada en HTML, CSS y JavaScript. Solo necesitas un navegador web para ejecutarla.
 
-## Captura de pantalla
+## Instrucciones de Instalación
 
-![Captura de pantalla](screenshot.png)
+1. Clona este repositorio:
 
-## Tecnologías Utilizadas
+    ```bash
+    git clone https://github.com/tu-usuario/generador-de-contrasenas.git
+    ```
 
-- **HTML**
-- **CSS**
-- **JavaScript**
+2. Navega al directorio del proyecto:
 
-## Instalación
+    ```bash
+    cd generador-de-contrasenas
+    ```
 
-Solo descarga el proyecto y abre el archivo `index.html` en cualquier navegador.
+3. Abre el archivo `index.html` en tu navegador favorito.
+
+    ```bash
+    open index.html
+    ```
+
+## Capturas de Pantalla
+
+### Interfaz del Generador de Contraseñas
+
+![Generador de Contraseñas](ruta/a/la/captura.png)
 
 ## Contribuciones
 
-Si quieres contribuir a este proyecto, siéntete libre de hacer un *fork* del repositorio y crear un *pull request* con tus mejoras o sugerencias.
+¡Las contribuciones son bienvenidas! Si deseas mejorar esta herramienta o agregar nuevas funcionalidades, no dudes en hacer un fork de este repositorio y enviar un pull request.
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT.
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
