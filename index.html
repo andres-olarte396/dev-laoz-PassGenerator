@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generador de Contraseñas Seguras</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
   </head>
   <body>
-    <div class="container">
+    <header>
       <h1>Generador de Contraseñas Seguras</h1>
-      <label for="passwordLength">Longitud de la contraseña:</label>
-      <input type="number" id="passwordLength" value="12" min="1" max="128" />
+      <p>
+        Este proyecto es una herramienta web que permite minificar y
+        desminificar archivos de CSS y JavaScript. Es útil para mejorar el
+        rendimiento de los sitios web al reducir el tamaño de los archivos.
+      </p>
+    </header>
+    <main>
+      <div class="container">
+        <label for="passwordLength">Longitud de la contraseña:</label>
+        <input type="number" id="passwordLength" value="12" min="1" max="128" />
 
-      <label>
-        <input type="checkbox" id="includeUppercase" checked />
-        Incluir letras mayúsculas
-      </label>
-      <label>
-        <input type="checkbox" id="includeNumbers" checked />
-        Incluir números
-      </label>
-      <label>
-        <input type="checkbox" id="includeSymbols" checked />
-        Incluir caracteres especiales
-      </label>
+        <label>
+          <input type="checkbox" id="includeUppercase" checked />
+          Incluir letras mayúsculas
+        </label>
+        <label>
+          <input type="checkbox" id="includeNumbers" checked />
+          Incluir números
+        </label>
+        <label>
+          <input type="checkbox" id="includeSymbols" checked />
+          Incluir caracteres especiales
+        </label>
 
-      <button id="generatePassword">Generar Contraseña</button>
+        <button id="generatePassword">Generar Contraseña</button>
 
-      <h2>Contraseña Generada:</h2>
-      <div id="passwordResult"></div>
+        <h2>Contraseña Generada:</h2>
+        <div id="passwordResult"></div>
 
-      <button id="copyPassword">Copiar Contraseña</button>
-    </div>
+        <button id="copyPassword">Copiar Contraseña</button>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
