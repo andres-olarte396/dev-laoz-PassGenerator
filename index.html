@@ -25,28 +25,49 @@
     </header>
     <main>
       <div class="container">
-        <label for="passwordLength">Longitud de la contraseña:</label>
-        <input type="number" id="passwordLength" value="12" min="1" max="128" />
-
-        <label>
-          <input type="checkbox" id="includeUppercase" checked />
-          Incluir letras mayúsculas
-        </label>
-        <label>
-          <input type="checkbox" id="includeNumbers" checked />
-          Incluir números
-        </label>
-        <label>
-          <input type="checkbox" id="includeSymbols" checked />
-          Incluir caracteres especiales
-        </label>
-
-        <button id="generatePassword">Generar Contraseña</button>
-
-        <h2>Contraseña Generada:</h2>
-        <div id="passwordResult"></div>
-
-        <button id="copyPassword">Copiar Contraseña</button>
+        <fieldset>
+          <legend>Generador de Contraseñas</legend>
+          <p>
+            Un generador de contraseñas es una herramienta que crea contraseñas
+            seguras y aleatorias para proteger tus cuentas en línea. Puedes
+            personalizar la longitud y los tipos de caracteres que deseas
+            incluir.
+          </p>
+          <fieldset>
+            <label for="passwordLength">Longitud de la contraseña:</label>
+            <input
+              type="number"
+              id="passwordLength"
+              value="12"
+              min="1"
+              max="128"
+            />
+            <ul>
+              <li>
+                Incluir letras mayúsculas
+                <input type="checkbox" id="includeUppercase" checked />
+              </li>
+              <li>
+                Incluir números
+                <input type="checkbox" id="includeNumbers" checked />
+              </li>
+              <li>
+                Incluir letras minúsculas
+                <input type="checkbox" id="includeLowercase" checked />
+              </li>
+              <li>
+                Incluir caracteres especiales
+                <input type="checkbox" id="includeSymbols" checked />
+              </li>
+            </ul>
+            <button id="generatePassword">Generar Contraseña</button>
+          </fieldset>
+          <fieldset>
+            <legend>Contraseña Generada:</legend>
+            <div id="passwordResult"></div>
+            <button id="copyPassword">Copiar Contraseña</button>
+          </fieldset>
+        </fieldset>
       </div>
     </main>
     <footer>
